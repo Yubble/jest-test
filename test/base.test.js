@@ -59,6 +59,7 @@ test('jest 匹配器：数组', () => {
 test('jest 匹配器：对象', () => {
     const obj = { status: { data: 332 } }
     expect(obj).toMatchObject({ status: { data: 332 } })
+    expect(obj).toHaveProperty('status')
 })
 
 test('jest 匹配器：异常', () => {
